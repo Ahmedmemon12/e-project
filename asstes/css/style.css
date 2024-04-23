@@ -249,6 +249,7 @@ section#slider{
 body {
   font-family: Raleway;
   background-color: #ffffff;
+  text-transform: capitalize;
 }
 
 .heading {
