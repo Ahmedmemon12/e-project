@@ -255,7 +255,7 @@ nav input{
 
 body {
   font-family: Raleway;
-  background-color: #202125;
+  background-color: #ffffff;
 }
 
 .heading {
@@ -263,7 +263,7 @@ body {
     font-size: 2.0em;
     letter-spacing: 1px;
     padding: 40px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .gallery-image {
