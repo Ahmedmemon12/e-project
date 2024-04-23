@@ -43,19 +43,28 @@ nav .wrapper{
 }
 .OnScroll{
   color: #f2f2f2 !important;
-  filter: drop-shadow(0px 4px 6px #b03a2e);
   font-size: 30px;
+}
+.OnScroll > span{
+  font-family: "Jersey 25", sans-serif;
+  color: tan;
+
 }
 .wrapper .logo a{
   font-size: clamp(1.7rem, 2.5vw, 2rem);
   color: #ffffff;
-  font-weight: 600;
   text-decoration: none;
   font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 1s;
+}
+.wrapper .logo a span{
+  font-size: clamp(1.7rem, 2.5vw, 2rem);
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
 }
 
 .wrapper .nav-links{
@@ -66,7 +75,7 @@ nav .wrapper{
   padding: 0px 2px;
 }
 .nav-links li a{
-  color: #ffffff;
+  color: #000000;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
@@ -189,7 +198,7 @@ nav input{
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  padding: 0 30px;
+  padding: 0 30px;  
 }
 .body-text div{
   font-size: 45px;
@@ -200,7 +209,7 @@ nav input{
 
 /* slider section */
 .HeroSec{
-  background-image: url('https://mogulesque.com/wp-content/uploads/2020/02/36770716074_58c7f3613c_o-scaled-scaled.jpg');
+  background-image: url('https://www.designboom.com/wp-content/uploads/2020/07/01_World-Heritage-in-Danger_Hatra_794px.gif');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -211,10 +220,23 @@ nav input{
 .HScontent{
   padding: 40vh 0px;
   color: white;
+  text-align: center;
 }
 .HScontent > h1{
-  
-  font-size: 50px;
+  font-size: clamp(4rem, 5rem, 6rem);
+}
+.HScontent > h4{
+  font-size: clamp(1rem, 2rem, 3rem);
+}
+.HScontent > button{
+  font-size: 20px;
+  background-color: #2f4f4f;
+  color: white;
+}
+.HScontent > h4 span{
+  color: rgb(0, 0, 0);
+  filter: drop-shadow(0px 1px 5px tan);
+  font-size: clamp(2rem, 3rem, 4rem);
 }
 /* slider section */
 
