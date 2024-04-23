@@ -208,6 +208,9 @@ nav input{
 /* end navbar section */
 
 /* slider section */
+section#slider{
+  max-height: 100vh;
+}
 .HeroSec{
   background-image: url('https://www.designboom.com/wp-content/uploads/2020/07/01_World-Heritage-in-Danger_Hatra_794px.gif');
   background-size: cover;
