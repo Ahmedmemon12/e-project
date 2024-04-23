@@ -1,17 +1,19 @@
-let sidebar = document.querySelector(".sidebar");
-let closeBtn = document.querySelector("#btn");
-let searchBtn = document.querySelector(".bx-search");
+const Navbar = document.querySelector('nav')
+const Logo = document.getElementById('Logo')
 
-closeBtn.addEventListener("click", () => {
-  sidebar.classList.toggle("open");
-  menuBtnChange();
-});
+window.addEventListener('scroll', function () {
+    const currentPostion = window.pageYOffset
+    console.log(currentPostion);
+  
+    if (currentPostion >= 80) {
+      Navbar.classList.add('nav')
+      Logo.classList.add('OnScroll')
+    }
+    else if (currentPostion < 80) {
+      Logo.classList.remove('OnScroll')
+      Navbar.classList.remove('nav')
+    }
+  })
+  
 
-function menuBtnChange() {
-  if (sidebar.classList.contains("open")) {
-    closeBtn.classList.replace("fa-bars", "fa-xmark");
-  } else {
-    closeBtn.classList.replace("fa-xmark", "fa-bars");
-  }
-}
-
+  
