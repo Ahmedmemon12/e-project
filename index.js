@@ -5,11 +5,11 @@ window.addEventListener('scroll', function () {
     const currentPostion = window.pageYOffset
     console.log(currentPostion);
   
-    if (currentPostion >= 80) {
+    if (currentPostion >= 300) {
       Navbar.classList.add('nav')
       Logo.classList.add('OnScroll')
     }
-    else if (currentPostion < 80) {
+    else if (currentPostion < 300) {
       Logo.classList.remove('OnScroll')
       Navbar.classList.remove('nav')
     }
