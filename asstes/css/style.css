@@ -222,18 +222,27 @@ section#slider{
   color: white;
   text-align: center;
 }
-.HScontent > h1{
+.HScontent > div > h1{
   font-size: clamp(4rem, 5rem, 6rem);
 }
-.HScontent > h4{
+.HScontent > div > h4{
   font-size: clamp(1rem, 2rem, 3rem);
 }
-.HScontent > button{
+.HScontent > div > button{
   font-size: 20px;
   background-color: #2f4f4f;
   color: white;
+  height: 50px;
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
 }
-.HScontent > h4 span{
+.HScontent > div{
+  background-color: #00000067;
+  padding: 30px;
+  border-radius: 20px;
+}
+.HScontent > div > h4 span{
   color: rgb(0, 0, 0);
   filter: drop-shadow(0px 1px 5px tan);
   font-size: clamp(2rem, 3rem, 4rem);
