@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./asstes/css/style.css">
+
+  <title>Food Menu</title>
+
+</head>
+<body>
+
+<div id="fooddiv"></div>
+
+<script>
+
+
+const fooditems = [
+{
+    id: 2,
+    name: "taj mehal",
+    city: "india , bharat",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrCnbB1o2mg0vX9RyzFGg5fer1TOdS8zahl3OQhJHcg&s"
+},
+{
+    id: 2,
+    name: "taj mehal",
+    city: "india , bharat",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrCnbB1o2mg0vX9RyzFGg5fer1TOdS8zahl3OQhJHcg&s"
+},
+{
+    id: 2,
+    name: "taj mehal",
+    city: "india , bharat",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrCnbB1o2mg0vX9RyzFGg5fer1TOdS8zahl3OQhJHcg&s"
+},
+{
+    id: 2,
+    name: "taj mehal",
+    city: "india , bharat",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrCnbB1o2mg0vX9RyzFGg5fer1TOdS8zahl3OQhJHcg&s"
+},
+{
+    id: 2,
+    name: "taj mehal",
+    city: "india , bharat",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrCnbB1o2mg0vX9RyzFGg5fer1TOdS8zahl3OQhJHcg&s"
+},
+{
+    id: 2,
+    name: "taj mehal",
+    city: "india , bharat",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrCnbB1o2mg0vX9RyzFGg5fer1TOdS8zahl3OQhJHcg&s"
+},
+{
+    id: 2,
+    name: "taj mehal",
+    city: "india , bharat",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrCnbB1o2mg0vX9RyzFGg5fer1TOdS8zahl3OQhJHcg&s"
+},
+{
+    id: 2,
+    name: "taj mehal",
+    city: "india , bharat",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNrCnbB1o2mg0vX9RyzFGg5fer1TOdS8zahl3OQhJHcg&s"
+}
+  
+  ]
+  const fooddiv = document.getElementById('fooddiv');
+
+  function allfood() {
+    fooditems.forEach((data) => {
+      const card = `
+      <div class="img-box">
+      <img src="${data.image}" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p>${data.name}</p>
+          <p class="opacity-low">${data.city}</p>
+        </div>
+      </div> 
+    </div>`;
+      fooddiv.innerHTML += card;
+    });
+  }
+
+  // Call the function to generate food cards
+  allfood();
+</script>
+
+</body>
+</html>
+
+
