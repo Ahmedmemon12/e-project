@@ -330,20 +330,37 @@ const prod = [
         "direction": "East"
     }
 ]
-const ImageGallery = document.getElementById('gallery')
-const preview = ImageGallery.childNodes[3]
 
-function displayProducts(prod) {
-    preview.innerHTML = null
-    prod.forEach((data, ind) => {
-        const card = `  <figure class="snip1177">
-        <img src="${data.images[0]}" alt="sq-sample28"/>
-        <div>
-          <h3>${data.title}</h3>
-        </div><a href="/product.html?id=${data.id}"></a>
-      </figure>`
+function displayProduct(productId) {
+    const product = prod.find(item => item.id === productId);
+    if (product) {
+        // Update HTML elements with product details
+        document.getElementById('product-title').textContent = product.title;
+        document.title = product.title;
+        
+        // Clear previous images
+        document.getElementById('product-images').innerHTML = '';
+        
+        // Append new images
+        product.images.forEach(imageUrl => {
+            const img = document.createElement('img');
+            img.src = imageUrl;
+            img.alt = product.title;
+            document.getElementById('product-images').appendChild(img);
+        });
 
-        preview.innerHTML += card
-    })
+        document.getElementById('product-direction').textContent = `Direction: ${product.direction}`;
+    } else {
+        console.log("Product not found");
+    }
 }
-displayProducts(prod)
+
+// Function to extract product ID from URL
+function getProductIDFromURL() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('id');
+}
+
+// Usage: Call this function on page load to display the corresponding product
+const productId = getProductIDFromURL();
+displayProduct(productId);

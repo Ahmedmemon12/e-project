@@ -3,7 +3,6 @@ const Logo = document.getElementById('Logo')
 
 window.addEventListener('scroll', function () {
     const currentPostion = window.pageYOffset
-    console.log(currentPostion);
   
     if (currentPostion >= 600) {
       Navbar.classList.add('Nav')
@@ -15,3 +14,8 @@ window.addEventListener('scroll', function () {
     }
   })
   
+  $(".hover").mouseleave(
+    function () {
+      $(this).removeClass("hover");
+    }
+  );

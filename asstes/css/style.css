@@ -304,6 +304,7 @@ nav {
   position: fixed;
   transition: 0.5s;
   width: 100%;
+  z-index: 2;
 }
 
 .logo {
@@ -564,6 +565,12 @@ section#slider {
 
 .HScontent>div>h4 {
   font-size: clamp(1rem, 2rem, 3rem);
+  color: tan;
+}
+.HScontent>div>span {
+  font-size: clamp(0.5rem, 1rem, 2rem);
+  color: white;
+  text-shadow: 2px 2px black;
 }
 
 .Btn {
@@ -2715,3 +2722,116 @@ ul {
 }
 
 /* about us section  */
+
+/* gallery Page */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1177 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+figure.snip1177 * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+figure.snip1177 img {
+  vertical-align: top;
+  max-width: 100%;
+}
+figure.snip1177 div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: table;
+  padding: 0 20px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+figure.snip1177 div:before,
+figure.snip1177 div:after {
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 100%;
+  content: '';
+  background-color: rgba(255, 255, 255, 0.5);
+  opacity: 0.8;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+figure.snip1177 div:before {
+  right: -150%;
+}
+figure.snip1177 div:after {
+  left: -150%;
+}
+figure.snip1177 h3 {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  opacity: 0;
+}
+figure.snip1177 h3 span {
+  font-weight: 800;
+  display: block;
+}
+figure.snip1177 a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+figure.snip1177:hover img,
+figure.snip1177.hover img {
+  opacity: 0.3;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+figure.snip1177:hover h3,
+figure.snip1177.hover h3 {
+  opacity: 1;
+}
+figure.snip1177:hover div,
+figure.snip1177.hover div {
+  opacity: 1;
+}
+figure.snip1177:hover div:before,
+figure.snip1177.hover div:before,
+figure.snip1177:hover div:after,
+figure.snip1177.hover div:after {
+  width: 150%;
+}
+
+section#gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  padding: 40px 0px;
+}
+.galleryContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.galleryContent figure{
+  max-height: 175px;
+  min-height: 175px;
+}
+/* gallery Page */

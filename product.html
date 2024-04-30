@@ -1,77 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/78/78220.png" type="image/x-icon">
     <title>Product Detail</title>
 </head>
+
 <body>
     <div id="product-title"></div>
     <div id="product-images"></div>
     <div id="product-direction"></div>
 
-    <script>
-        // Sample array of products
-// Sample array of products
-const prod = [
-    {
-        id: '1',
-        title: 'Taj Mahal - India',
-        images: [
-            'https://assets.editorial.aetnd.com/uploads/2011/06/taj-mahal-gettyimages-463924915.jpg?width=768',
-            'https://mogulesque.com/wp-content/uploads/2020/02/36770716074_58c7f3613c_o-scaled-scaled.jpg',
-            'https://static.toiimg.com/thumb/91955051/Taj-Mahal-India.jpg?width=1200&height=900'
-        ],
-        link: 'index.html',
-        direction: 'North'
-    },
-    {
-        id: '2',
-        title: 'Machu Picchu - Peru',
-        images: [
-            'https://lp-cms-production.imgix.net/2020-10/500pxRF_16641625.jpg',
-            'https://cdn.britannica.com/25/180725-050-03DE70E6/area-Machu-Picchu-Peru.jpg',
-            'https://www.peruforless.com/blog/wp-content/uploads/2020/05/machu-picchu-ruins.jpg'
-        ],
-        link: 'index.html',
-        direction: 'North'
-    },
-];
-
-// Function to display product details based on ID
-function displayProduct(productId) {
-    const product = prod.find(item => item.id === productId);
-    if (product) {
-        // Update HTML elements with product details
-        document.getElementById('product-title').textContent = product.title;
-        
-        // Clear previous images
-        document.getElementById('product-images').innerHTML = '';
-        
-        // Append new images
-        product.images.forEach(imageUrl => {
-            const img = document.createElement('img');
-            img.src = imageUrl;
-            img.alt = product.title;
-            document.getElementById('product-images').appendChild(img);
-        });
-
-        document.getElementById('product-direction').textContent = `Direction: ${product.direction}`;
-    } else {
-        console.log("Product not found");
-    }
-}
-
-// Function to extract product ID from URL
-function getProductIDFromURL() {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get('id');
-}
-
-// Usage: Call this function on page load to display the corresponding product
-const productId = getProductIDFromURL();
-displayProduct(productId);
-
-    </script>
+    <script src="ProductsRender.js"></script>
 </body>
+
 </html>
