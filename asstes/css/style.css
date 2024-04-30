@@ -289,11 +289,15 @@ a.emger:hover #top-header {
 
 /* announcement Bar */
 /* navbar section */
-.nav {
+.Nav {
   position: fixed;
   z-index: 99;
   width: 100%;
-  background: #2f4f4f;
+  /* background: #2f4f4f; */
+  background: rgba(0, 0, 0, 0.43);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  -webkit-backdrop-filter: blur(8.8px);
 }
 
 nav {
@@ -316,7 +320,6 @@ nav {
 nav .wrapper {
   position: relative;
   max-width: 1300px;
-  padding: 0px 30px;
   height: 70px;
   line-height: 70px;
   margin: auto;
@@ -356,11 +359,16 @@ nav .wrapper {
 
 .wrapper .nav-links {
   display: inline-flex;
+  margin: 0 !important;
 }
 
 .nav-links li {
   list-style: none;
   padding: 0px 2px;
+}
+
+.Nav .nav-links li a {
+  color: white;
 }
 
 .nav-links li a {
@@ -437,7 +445,12 @@ nav .wrapper {
 }
 
 .mega-box .content {
-  background: #2f4f4f;
+  background: #0000009a;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 1);
   padding: 25px 20px;
   display: flex;
   width: 100%;
@@ -2625,13 +2638,23 @@ p {
 
 /* Gallery Page styling */
 /* about us section  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #2c3145;
 }
-a, a:hover, a:focus, a:active {
+
+a,
+a:hover,
+a:focus,
+a:active {
   text-decoration: none;
   outline: none;
 }
+
 ul {
   margin: 0;
   padding: 0;
@@ -2644,6 +2667,7 @@ ul {
   padding-bottom: 80px;
   min-height: 100vh;
 }
+
 .section-title {
   font-weight: 700;
   text-transform: capitalize;
@@ -2667,6 +2691,7 @@ ul {
   height: 2px;
   width: 100px;
 }
+
 .text_custom {
   color: #00bd2a;
 }

@@ -6,12 +6,12 @@ window.addEventListener('scroll', function () {
     console.log(currentPostion);
   
     if (currentPostion >= 300) {
-      Navbar.classList.add('nav')
+      Navbar.classList.add('Nav')
       Logo.classList.add('OnScroll')
     }
     else if (currentPostion < 300) {
       Logo.classList.remove('OnScroll')
-      Navbar.classList.remove('nav')
+      Navbar.classList.remove('Nav')
     }
   })
   
