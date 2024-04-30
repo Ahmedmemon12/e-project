@@ -7,7 +7,6 @@ const prod = [
             'https://mogulesque.com/wp-content/uploads/2020/02/36770716074_58c7f3613c_o-scaled-scaled.jpg',
             'https://static.toiimg.com/thumb/91955051/Taj-Mahal-India.jpg?width=1200&height=900'
         ],
-        link: 'index.html',
         direction: 'North'
     },
     {
@@ -18,7 +17,6 @@ const prod = [
             'https://cdn.britannica.com/25/180725-050-03DE70E6/area-Machu-Picchu-Peru.jpg',
             'https://www.peruforless.com/blog/wp-content/uploads/2020/05/machu-picchu-ruins.jpg'
         ],
-        link: 'index.html',
         direction: 'North'
     },
 ]
