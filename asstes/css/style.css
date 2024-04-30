@@ -627,16 +627,17 @@ section#slider {
 
 body {
   font-family: Raleway;
-  background-color: #ffffff;
-  text-transform: capitalize;
+  background-color: #202125;
 }
 
 .heading {
-    text-align: center;
-    font-size: 2.0em;
-    letter-spacing: 1px;
-    padding: 40px;
-    color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 40px;
+  font-size: clamp(3rem, 4rem, 5rem);
+  font-family: Gagalin;
+  background: -webkit-linear-gradient(bottom, #ffd277, #3f3f3f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .gallery-image {
