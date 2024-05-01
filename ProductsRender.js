@@ -337,19 +337,21 @@ function displayProduct(productId) {
         // Update HTML elements with product details
         document.getElementById('product-title').textContent = product.title;
         document.title = product.title;
-        
-        // Clear previous images
-        document.getElementById('product-images').innerHTML = '';
-        
-        // Append new images
-        product.images.forEach(imageUrl => {
-            const img = document.createElement('img');
-            img.src = imageUrl;
-            img.alt = product.title;
-            document.getElementById('product-images').appendChild(img);
-        });
+        const Img_modal = document.getElementById('image__Slider')
 
-        document.getElementById('product-direction').textContent = `Direction: ${product.direction}`;
+        function imageSlider() {
+            Img_modal.innerHTML = null
+            product.images.forEach(imageUrl => {
+                const image = `<div class="slide">
+                <img src="${imageUrl}" alt="" />
+            </div>`
+                Img_modal.innerHTML += image
+            });
+
+        }
+        imageSlider()
+
+        document.getElementById('product-direction').textContent = `${product.direction}`;
     } else {
         console.log("Product not found");
     }
@@ -364,3 +366,13 @@ function getProductIDFromURL() {
 // Usage: Call this function on page load to display the corresponding product
 const productId = getProductIDFromURL();
 displayProduct(productId);
+
+$(".slideshow").slick({
+    infinite: true,
+    autoplay: false,
+    dots: false,
+    arrows: false,
+    autoplaySpeed: 1000,
+    fade: true,
+    cssEase: 'linear'
+});
