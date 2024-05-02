@@ -340,7 +340,10 @@ nav .wrapper {
   color: tan;
 
 }
-
+.Nav .nav-links .active a{
+  color: white !important;
+  background-color: maroon !important;
+}
 .wrapper .logo a {
   font-size: clamp(1.7rem, 2.5vw, 2rem);
   color: #ffffff;
@@ -397,6 +400,9 @@ nav .wrapper {
   transition: all 0.3s ease;
 }
 
+.Nav .nav-links li a:hover {
+  color: #000000;
+}
 .nav-links li a:hover {
   color: #800000;
 }
