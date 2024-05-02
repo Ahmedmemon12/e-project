@@ -293,8 +293,8 @@ a.emger:hover #top-header {
   position: fixed;
   z-index: 99;
   width: 100%;
-  /* background: #2f4f4f; */
-  background: rgba(0, 0, 0, 0.43);
+  background: #ffffff;
+  /* background: rgba(0, 0, 0, 0.43); */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(8.8px);
   -webkit-backdrop-filter: blur(8.8px);
@@ -369,11 +369,11 @@ nav .wrapper {
 }
 
 .Nav .nav-links li a {
-  color: white;
+  color: #800000;
 }
 
 .nav-links li a {
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-size: 20px;
   font-weight: 600;
@@ -397,11 +397,12 @@ nav .wrapper {
 }
 
 .nav-links li a:hover {
-  color: tan;
+  color: #800000;
 }
 
 .nav-links .active a {
-  color: tan !important;
+  color: #800000 !important;
+  background-color: white;
 }
 
 .nav-links .mobile-item {
