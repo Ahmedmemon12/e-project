@@ -242,93 +242,168 @@ const prod = [
         direction: 'East'
     },
     {
-        "id": "23",
-        "title": "The Tower of London - United Kingdom",
-        "images": [
+        id: "23",
+        title: "The Tower of London - United Kingdom",
+        images: [
             "https://cdn.britannica.com/59/136959-050-79D33286/keep-White-Tower.jpg",
             "https://worldstrides.com/wp-content/uploads/2015/07/api201.jpg",
             "https://cdn.britannica.com/71/178971-050-9F37F276/Tower-of-London.jpg"
         ],
-        "description": "The Tower of London, officially Her Majesty's Royal Palace and Fortress of the Tower of London, is a historic castle located on the north bank of the River Thames in central London. It was founded towards the end of 1066 as part of the Norman Conquest of England. The Tower has served variously as an armoury, a treasury, a menagerie, the home of the Royal Mint, a public record office, and the home of the Crown Jewels of England.",
-        "direction": "East"
+        description: "The Tower of London, officially Her Majesty's Royal Palace and Fortress of the Tower of London, is a historic castle located on the north bank of the River Thames in central London. It was founded towards the end of 1066 as part of the Norman Conquest of England. The Tower has served variously as an armoury, a treasury, a menagerie, the home of the Royal Mint, a public record office, and the home of the Crown Jewels of England.",
+        direction: "East"
     },
     {
-        "id": "24",
-        "title": "The Forbidden City - China",
-        "images": [
+        id: "24",
+        title: "The Forbidden City - China",
+        images: [
             "https://cdn.britannica.com/03/198203-050-138BB1C3/entrance-Gate-of-Divine-Might-Beijing-Forbidden.jpg",
             "https://cdn.britannica.com/32/117732-050-9261CFE0/Palace-of-Heavenly-Purity-Forbidden-City-Beijing.jpg",
             "https://data.trippest.com/images/info/beijing/870-10.jpg"
         ],
-        "description": "The Forbidden City, located in Beijing, China, served as the imperial palace and political center of Chinese government for nearly 500 years. It was constructed from 1406 to 1420 during the Ming Dynasty and consists of 980 surviving buildings with 8,704 rooms. It is a UNESCO World Heritage Site and is considered one of the most important cultural landmarks in China.",
-        "direction": "East"
+        description: "The Forbidden City, located in Beijing, China, served as the imperial palace and political center of Chinese government for nearly 500 years. It was constructed from 1406 to 1420 during the Ming Dynasty and consists of 980 surviving buildings with 8,704 rooms. It is a UNESCO World Heritage Site and is considered one of the most important cultural landmarks in China.",
+        direction: "East"
     },
     {
-        "id": "25",
-        "title": "The Great Wall of China - China",
-        "images": [
+        id: "25",
+        title: "The Great Wall of China - China",
+        images: [
             "https://cdn.britannica.com/82/178682-050-0F8C47E3/Great-Wall-of-China-Mutianyu-Beijing.jpg",
             "https://images.nationalgeographic.org/image/upload/t_edhub_resource_key_image/v1638892506/EducationHub/photos/the-great-wall-of-china.jpg",
             "https://cdn.britannica.com/82/94382-050-20CF23DB/Great-Wall-of-China-Beijing.jpg"
         ],
-        "description": "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the Eurasian Steppe.",
-        "direction": "East"
+        description: "The Great Wall of China is a series of fortifications made of stone, brick, tamped earth, wood, and other materials, generally built along an east-to-west line across the historical northern borders of China to protect the Chinese states and empires against the raids and invasions of the various nomadic groups of the Eurasian Steppe.",
+        direction: "East"
     },
     {
-        "id": "26",
-        "title": "The Hagia Sophia - Turkey",
-        "images": [
+        id: "26",
+        title: "The Hagia Sophia - Turkey",
+        images: [
             "https://cdn.britannica.com/03/189803-050-871B95C4/Hagia-Sophia-Istanbul.jpg",
             "https://i.tribune.com.pk/media/images/thumbs_b_c_cc07db591d49baae325e8bb686d7ca9b1595058056-0/thumbs_b_c_cc07db591d49baae325e8bb686d7ca9b1595058056-0.jpg",
             "https://muze.gen.tr/images/hagia_sophia_mosque.jpg"
         ],
-        "description": "Hagia Sophia, officially the Ayasofya Mosque, is a Late Antique place of worship in Istanbul, Turkey. Built-in 537 AD at the beginning of the Middle Ages, it was famous in particular for its massive dome. It was the world's largest building and an engineering marvel of its time. It served as an Eastern Orthodox cathedral, a Roman Catholic cathedral, and an imperial mosque before becoming a museum in 1935.",
-        "direction": "East"
+        description: "Hagia Sophia, officially the Ayasofya Mosque, is a Late Antique place of worship in Istanbul, Turkey. Built-in 537 AD at the beginning of the Middle Ages, it was famous in particular for its massive dome. It was the world's largest building and an engineering marvel of its time. It served as an Eastern Orthodox cathedral, a Roman Catholic cathedral, and an imperial mosque before becoming a museum in 1935.",
+        direction: "East"
     },
     {
-        "id": "27",
-        "title": "The Temple of Heaven - China",
-        "images": [
+        id: "27",
+        title: "The Temple of Heaven - China",
+        images: [
             "https://whc.unesco.org/uploads/thumbs/site_0881_0001-750-750-20151104133609.jpg",
             "https://funlifecrisis.com/wp-content/uploads/2019/09/tips-and-guide-temple-of-heaven-beijing-china.jpg",
             "https://static.toiimg.com/photo/52847430.cms"
         ],
-        "description": "The Temple of Heaven is an imperial complex of religious buildings situated in the southeastern part of central Beijing, China. The complex was visited by the Emperors of the Ming and Qing dynasties for annual ceremonies of prayer to Heaven for a good harvest. It is regarded as a Taoist temple, although Chinese Heaven worship, especially by the reigning monarch of the day, pre-dates Taoism.",
-        "direction": "East"
+        description: "The Temple of Heaven is an imperial complex of religious buildings situated in the southeastern part of central Beijing, China. The complex was visited by the Emperors of the Ming and Qing dynasties for annual ceremonies of prayer to Heaven for a good harvest. It is regarded as a Taoist temple, although Chinese Heaven worship, especially by the reigning monarch of the day, pre-dates Taoism.",
+        direction: "East"
     },
     {
-        "id": "28",
-        "title": "The Moai Statues of Easter Island - Chile",
-        "images": [
+        id: "28",
+        title: "The Moai Statues of Easter Island - Chile",
+        images: [
             "https://th-thumbnailer.cdn-si-edu.com/hPva617R08Xqss6sccZINteQP_8=/800x600/https://tf-cmsv2-smithsonianmag-media.s3.amazonaws.com/filer/Easter-Island-moai-statues631.jpg",
             "https://www.artnews.com/wp-content/uploads/2022/12/GettyImages-921707628.jpg?w=1200",
             "https://assets.editorial.aetnd.com/uploads/2009/11/easter-island-gettyimages-89175284.jpg"
         ],
-        "description": "The Moai, or mo'ai, are monolithic human figures carved by the Rapa Nui people on Easter Island in eastern Polynesia between the years 1250 and 1500. Nearly half are still at Rano Raraku, the main moai quarry, but hundreds were transported from there and set on stone platforms called ahu around the island's perimeter.",
-        "direction": "East"
+        description: "The Moai, or mo'ai, are monolithic human figures carved by the Rapa Nui people on Easter Island in eastern Polynesia between the years 1250 and 1500. Nearly half are still at Rano Raraku, the main moai quarry, but hundreds were transported from there and set on stone platforms called ahu around the island's perimeter.",
+        direction: "East"
     },
     {
-        "id": "29",
-        "title": "The Palace of Versailles - France",
-        "images": [
+        id: "29",
+        title: "The Palace of Versailles - France",
+        images: [
             "https://www.travelandleisure.com/thmb/sR2kS_tl_yz4bxFkxDWyaVv6lmw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/versailles-palace-courtyard-SECRET1216-911d9538288141a686474b1ce08a2e1a.jpg",
             "https://media.cntraveler.com/photos/5a91a36760543c4ae96c2ec7/16:9/w_2560,c_limit/Versailles_Getty_2018_GettyImages-154772942.jpg",
             "https://cdn.britannica.com/65/114465-050-8C96BD81/Hall-of-Mirrors-ceiling-Jules-Hardouin-Mansart-Charles.jpg"
         ],
-        "description": "The Palace of Versailles was the principal royal residence of France from 1682, under Louis XIV, until the start of the French Revolution in 1789, under Louis XVI. It is located in the department of Yvelines, in the region of Île-de-France, about 20 kilometers southwest of the center of Paris.",
-        "direction": "East"
+        description: "The Palace of Versailles was the principal royal residence of France from 1682, under Louis XIV, until the start of the French Revolution in 1789, under Louis XVI. It is located in the department of Yvelines, in the region of Île-de-France, about 20 kilometers southwest of the center of Paris.",
+        direction: "East"
     },
     {
-        "id": "30",
-        "title": "The Terracotta Army - China",
-        "images": [
+        id: "30",
+        title: "The Terracotta Army - China",
+        images: [
             "https://nypost.com/wp-content/uploads/sites/2/2019/04/terracotta1.jpg?quality=75&strip=all",
             "https://ichef.bbci.co.uk/news/976/cpsprodpb/108A9/production/_101735776_gettyimages-71400772.jpg",
             "https://upload.wikimedia.org/wikipedia/commons/a/af/ForbiddenGardens-TerraCottaArmy_2008%274-crwpps.jpg"
         ],
-        "description": "The Terracotta Army is a collection of terracotta sculptures depicting the armies of Qin Shi Huang, the first Emperor of China. It is a form of funerary art buried with the emperor in 210–209 BCE with the purpose of protecting the emperor in his afterlife.",
-        "direction": "East"
+        description: "The Terracotta Army is a collection of terracotta sculptures depicting the armies of Qin Shi Huang, the first Emperor of China. It is a form of funerary art buried with the emperor in 210–209 BCE with the purpose of protecting the emperor in his afterlife.",
+        direction: "East"
+    },
+    {
+        id: "31",
+        "title": "Great Pyramid of Giza - Egypt",
+        "description": "The Great Pyramid of Giza, also known as the Pyramid of Khufu, is the oldest and largest of the three pyramids in the Giza pyramid complex. It was built as a tomb for the Fourth Dynasty Egyptian pharaoh Khufu around 2560 BCE. It is the only remaining ancient wonder of the world.",
+        "images": [
+            "https://images.ctfassets.net/cnu0m8re1exe/gyiliMlNeupSptslOAE9x/beb9a72accec1d6844895d12ed991244/DSC-E0818_01.jpg?fm=jpg&fl=progressive&w=660&h=433&fit=fill",
+            "https://i.natgeofe.com/n/535f3cba-f8bb-4df2-b0c5-aaca16e9ff31/giza-plateau-pyramids.jpg",
+            "https://cdn.britannica.com/06/122506-050-C8E03A8A/Pyramid-of-Khafre-Giza-Egypt.jpg"
+        ],
+        "direction": "Seven-Wonders"
+    },
+    {
+        id: "32",
+        "title": "Hanging Gardens of Babylon - Iraq (Location disputed)",
+        "description": "The Hanging Gardens of Babylon are one of the Seven Wonders of the Ancient World. They are believed to have been built in the ancient city-state of Babylon, near present-day Hillah, Babil province, in Iraq. The gardens were supposedly built by King Nebuchadnezzar II for his wife, who missed the lush greenery of her homeland.",
+        "images": [
+            "https://www.unusualtraveler.com/wp-content/uploads/2019/04/2019-02-08-13.01.53-735x551.jpg",
+            "https://i.natgeofe.com/n/18b80fef-63f4-4423-8da0-d99ad9b614df/babylonian-oasis-artist-rendering.jpg",
+            "https://content.api.news/v3/images/bin/932fcdd335023b661a092e8025e04650?width=1280"
+        ],
+        "direction": "Seven-Wonders"
+    },
+    {
+        id: "33",
+        "title": "Statue of Zeus at Olympia - Greece",
+        "description": "The Statue of Zeus at Olympia was a giant seated figure of the god Zeus, made by the Greek sculptor Phidias around 435 BCE at the sanctuary of Olympia, Greece. It was approximately 12 meters tall and was regarded as one of the Seven Wonders of the Ancient World.",
+        "images": [
+            "https://facts.net/wp-content/uploads/2023/09/13-mind-blowing-facts-about-the-zeus-statue-1694346305.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/6/66/Le_Jupiter_Olympien_ou_l%27art_de_la_sculpture_antique.jpg"
+        ],
+        "direction": "Seven-Wonders"
+    },
+    {
+        id: "34",
+        "title": "Temple of Artemis at Ephesus - Turkey",
+        "description": "The Temple of Artemis at Ephesus was a Greek temple dedicated to the goddess Artemis and was once one of the Seven Wonders of the Ancient World. Located in present-day Turkey, it was built in the 6th century BCE and was destroyed and rebuilt several times before its eventual demise.",
+        "images": [
+            "https://www.ephesusturkey.com/wp-content/uploads/2015/02/artemis-temple-620x350.jpeg",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Miniaturk_009.jpg/800px-Miniaturk_009.jpg",
+            "https://image.hurimg.com/i/hurriyet/75/0x0/62fb6ef64e3fe10d8c5cc195.jpg"
+        ],
+        "direction": "Seven-Wonders"
+    },
+    {
+        id: "35",
+        "title": "Mausoleum at Halicarnassus - Turkey",
+        "description": "The Mausoleum at Halicarnassus was a tomb built between 353 and 350 BCE in Halicarnassus, present-day Bodrum, Turkey, for Mausolus, a satrap in the Persian Empire, and his wife Artemisia II of Caria. It was known for its ornate architecture and was one of the Seven Wonders of the Ancient World.",
+        "images": [
+            "https://wilstar.com/wp-content/uploads/2022/09/mausoleum-1.jpg",
+            "https://wilstar.com/wp-content/uploads/2022/09/mausoleum-1.jpg",
+            "https://www.orangesmile.com/extreme/img/main/halikarnas-mozolesi_1.jpg"
+        ],
+        "direction": "Seven-Wonders"
+    },
+    {
+        id: "36",
+        "title": "Colossus of Rhodes - Greece",
+        "description": "The Colossus of Rhodes was a statue of the Greek sun god Helios, erected on the Greek island of Rhodes by Chares of Lindos between 292 and 280 BCE. It stood over 30 meters tall and was one of the tallest statues of the ancient world.",
+        "images": [
+            "https://greekcitytimes.com/wp-content/uploads/2021/07/Colossus-of-rhodes-599x600.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFJrWad3hE7ipYoEvPmifZCNuNRQ0fqliSitOkQPnRfKSmkFHxOJ2Pixurqa-H8z27A4o&usqp=CAU"
+        ],
+        "direction": "Seven-Wonders"
+    },
+    {
+        id: "37",
+        "title": "Lighthouse of Alexandria - Egypt",
+        "description": "The Lighthouse of Alexandria, also known as the Pharos of Alexandria, was a lighthouse built by the Ptolemaic Kingdom between 280 and 247 BCE on the island of Pharos at Alexandria, Egypt. It was one of the tallest man-made structures in the world for many centuries and was considered one of the Seven Wonders of the Ancient World.",
+        "images": [
+            "https://images.memphistours.com/large/4b7d3921c8fd3a8ff33d4e58357bca15.jpg",
+            "https://facts.net/wp-content/uploads/2024/01/15-fun-facts-about-the-lighthouse-of-alexandria-1705443853.jpg"
+        ],
+        "direction": "Seven-Wonders"
     }
+
 ]
 
 function displayProduct(productId) {
