@@ -487,6 +487,7 @@ nav .wrapper {
 .content .Row .mega-links {
   margin-left: -40px;
   border-left: 1px solid rgba(255, 255, 255, 0.09);
+  padding: 0;
 }
 
 .Row .mega-links li {
@@ -680,7 +681,7 @@ section#slider {
 
 .gallery-image img {
   height: 250px;
-  width: 350px;
+  width: 400px;
   transform: scale(1.0);
   transition: transform 0.4s ease;
 }
@@ -689,7 +690,7 @@ section#slider {
   box-sizing: content-box;
   margin: 10px;
   height: 250px;
-  width: 350px;
+  width: 400px;
   overflow: hidden;
   display: inline-block;
   color: white;
@@ -710,7 +711,7 @@ section#slider {
 
 .transparent-box {
   height: 250px;
-  width: 350px;
+  width: 4000px;
   background-color: rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;

@@ -4,14 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/78/78220.png" type="image/x-icon">
     <link rel="stylesheet" href="./asstes/css/style.css">
-    <title>Product Detail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <title>Site Map</title>
 </head>
 
 <body>
@@ -27,19 +22,17 @@
             <input type="radio" name="slider" id="close-btn">
             <ul class="nav-links">
                 <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li>
                     <a href="#" class="desktop-item">Show More <i class="fa-solid fa-caret-down"></i></a>
                     <input type="checkbox" id="showMega">
                     <label for="showMega" class="mobile-item">More</label>
                     <div class="mega-box">
                         <div class="content">
-                            <div class="row">
+                            <div class="Row">
                                 <img src="https://j.gifs.com/qY1ROR@facebook.gif?download=true" alt="">
                             </div>
-                            <div class="row">
+                            <div class="Row">
                                 <header>Sites</header>
                                 <ul class="mega-links">
                                     <li><a href="#">North Sites</a></li>
@@ -48,7 +41,7 @@
                                     <li><a href="#">West Sites</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
+                            <div class="Row">
                                 <header>Places You May Like</header>
                                 <ul class="mega-links">
                                     <li><a href="#">Seven Wonders</a></li>
@@ -57,7 +50,7 @@
                                     <li><a href="#">SwitzerLand</a></li>
                                 </ul>
                             </div>
-                            <div class="row">
+                            <div class="Row">
                                 <header>Our Packages</header>
                                 <ul class="mega-links">
                                     <li><a href="#">Hajj and Umrah Packages</a></li>
@@ -70,24 +63,35 @@
                         </div>
                     </div>
                 </li>
-                <li><a href="#">Feedback</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li class="active"><a href="siteMap.html">Site Map</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
             </ul>
             <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
         </div>
     </nav>
-    <section class="section">
-        <div class="columns">
-            <div class="column is-10 is-offset-1">
-                <div id="image__Slider" class="slideshow">
+
+    <section id="slider">
+        <div class="HeroSec">
+            <div class="HScontent">
+                <div class="HSCtext">
+                    <h1>Historical Monuments Site Map</h1>
+                    <h4>Now Go and <span>Explore</span> More</h4>
                 </div>
             </div>
         </div>
+        </div>
     </section>
 
-    <div id="product-title"></div>
-    <div id="product-direction"></div>
-
-    <script src="ProductsRender.js"></script>
+<section id="siteMap">
+    <div class="siteMapCont">
+        <div class="row">
+            <div class="column mainPage">
+                
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 
 </html>
