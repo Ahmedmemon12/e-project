@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
@@ -24,169 +25,179 @@
 </head>
 <style>
   .radio-input input {
-  display: none;
-}
-
-.radio-input {
-  --container_width: 80vw;
-  position: relative;
-  display: flex;
-  align-items: center;
-  border-radius: 10px;
-  background-color: #fff;
-  color: #000000;
-  width: var(--container_width);
-  overflow: hidden;
-  border: 1px solid rgba(53, 52, 52, 0.226);
-}
-
-.radio-input label {
-  width: 100%;
-  padding: 10px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-  font-weight: 600;
-  letter-spacing: -1px;
-  font-size: 16px;
-}
-
-.selection {
-  display: none;
-  position: absolute;
-  height: 100%;
-  width: calc(var(--container_width) / 6);
-  z-index: 0;
-  left: 0;
-  top: 0;
-  transition: .15s ease;
-}
-
-.radio-input label:has(input:checked) {
-  color: #fff;
-}
-
-.radio-input label:has(input:checked) ~ .selection {
-  background-color: tan;
-  display: inline-block;
-}
-
-.radio-input label:nth-child(1):has(input:checked) ~ .selection {
-  transform: translateX(calc(var(--container_width) * 0/6));
-}
-
-.radio-input label:nth-child(2):has(input:checked) ~ .selection {
-  transform: translateX(calc(var(--container_width) * 1/6));
-}
-
-.radio-input label:nth-child(3):has(input:checked) ~ .selection {
-  transform: translateX(calc(var(--container_width) * 2/6));
-}
-.radio-input label:nth-child(4):has(input:checked) ~ .selection {
-  transform: translateX(calc(var(--container_width) * 3/6));
-}
-.radio-input label:nth-child(5):has(input:checked) ~ .selection {
-  transform: translateX(calc(var(--container_width) * 4/6));
-}
-.radio-input label:nth-child(6):has(input:checked) ~ .selection {
-  transform: translateX(calc(var(--container_width) * 5/6));
-}
-.select-menu {
-  width: 70vw;
-  cursor: pointer;
-  position: relative;
-}
-
-.select {
-  background-color: tan;
-  padding: 20px;
-  color: #000;
-  font-weight: 900;
-  border-radius: 6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.options-list {
-  width: 100%;
-  background-color: #f9f9f9;
-  border-radius: 6px;
-  margin-top: 14px;
-  padding: 0 20px;
-  max-height: 180px;
-  overflow-y: auto;
-  -webkit-transition: .4s linear .2s;
-  -o-transition: .4s linear .2s;
-  transition: .4s linear .2s;
-  height: 0;
-}
-
-.option {
-  padding: 8px 0;
-  font-weight: 500;
-  font-size: 14px;
-  -webkit-transition: .3s ease-in-out;
-  -o-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.option:hover,
-.option.selected {
-  background-color: tan;
-  color: black;
-  font-weight: 900;
-  border-radius: 5px;
-  padding-left: 10px;
-}
-
-.options-list::-webkit-scrollbar {
-  width: 4px;
-  background-color: #eee;
-}
-
-.options-list::-webkit-scrollbar-thumb {
-  background-color: tan;
-}
-
-.options-list.active {
-  height: 180px;
-}
-@media (max-width: 767px) {
-  #dropDown{
-    display: block !important;
-  }
-  #selector{
     display: none;
   }
 
-}
-@-webkit-keyframes fade-in {
-  0% {
-    opacity: 0;
+  .radio-input {
+    --container_width: 80vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000000;
+    width: var(--container_width);
+    overflow: hidden;
+    border: 1px solid rgba(53, 52, 52, 0.226);
   }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 
+  .radio-input label {
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    font-weight: 600;
+    letter-spacing: -1px;
+    font-size: 16px;
+  }
+
+  .selection {
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: calc(var(--container_width) / 6);
+    z-index: 0;
+    left: 0;
+    top: 0;
+    transition: .15s ease;
+  }
+
+  .radio-input label:has(input:checked) {
+    color: #fff;
+  }
+
+  .radio-input label:has(input:checked)~.selection {
+    background-color: tan;
+    display: inline-block;
+  }
+
+  .radio-input label:nth-child(1):has(input:checked)~.selection {
+    transform: translateX(calc(var(--container_width) * 0/6));
+  }
+
+  .radio-input label:nth-child(2):has(input:checked)~.selection {
+    transform: translateX(calc(var(--container_width) * 1/6));
+  }
+
+  .radio-input label:nth-child(3):has(input:checked)~.selection {
+    transform: translateX(calc(var(--container_width) * 2/6));
+  }
+
+  .radio-input label:nth-child(4):has(input:checked)~.selection {
+    transform: translateX(calc(var(--container_width) * 3/6));
+  }
+
+  .radio-input label:nth-child(5):has(input:checked)~.selection {
+    transform: translateX(calc(var(--container_width) * 4/6));
+  }
+
+  .radio-input label:nth-child(6):has(input:checked)~.selection {
+    transform: translateX(calc(var(--container_width) * 5/6));
+  }
+
+  .select-menu {
+    width: 70vw;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .select {
+    background-color: tan;
+    padding: 20px;
+    color: #000;
+    font-weight: 900;
+    border-radius: 6px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .options-list {
+    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 6px;
+    margin-top: 14px;
+    padding: 0 20px;
+    max-height: 180px;
+    overflow-y: auto;
+    -webkit-transition: .4s linear .2s;
+    -o-transition: .4s linear .2s;
+    transition: .4s linear .2s;
+    height: 0;
+  }
+
+  .option {
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 14px;
+    -webkit-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  .option:hover,
+  .option.selected {
+    background-color: tan;
+    color: black;
+    font-weight: 900;
+    border-radius: 5px;
+    padding-left: 10px;
+  }
+
+  .options-list::-webkit-scrollbar {
+    width: 4px;
+    background-color: #eee;
+  }
+
+  .options-list::-webkit-scrollbar-thumb {
+    background-color: tan;
+  }
+
+  .options-list.active {
+    height: 180px;
+  }
+
+  @media (max-width: 767px) {
+    #dropDown {
+      display: block !important;
+    }
+
+    #selector {
+      display: none;
+    }
+
+  }
+
+  @-webkit-keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 </style>
+
 <body>
   <nav class="">
     <div class="wrapper">
@@ -195,7 +206,7 @@
           <img
             src="https://firebasestorage.googleapis.com/v0/b/olx-app-976a5.appspot.com/o/eproject%2FUntitled%20design%20(5).png?alt=media&token=efdc70db-cf2c-44fd-9dc2-8ff91aa94e5b"
             width="35px" alt="">
-          historical <span>Monuments</span></a>
+          historical <span> Monuments</span></a>
       </div>
       <input type="radio" name="slider" id="menu-btn">
       <input type="radio" name="slider" id="close-btn">
@@ -214,29 +225,29 @@
               <div class="Row">
                 <header>Sites</header>
                 <ul class="mega-links">
-                  <li><a href="#">North Sites</a></li>
-                  <li><a href="#">South Sites</a></li>
-                  <li><a href="#">East Sites</a></li>
-                  <li><a href="#">West Sites</a></li>
+                  <li><a href="gallery.html">North Sites</a></li>
+                  <li><a href="gallery.html">South Sites</a></li>
+                  <li><a href="gallery.html">East Sites</a></li>
+                  <li><a href="gallery.html">West Sites</a></li>
                 </ul>
               </div>
               <div class="Row">
                 <header>Places You May Like</header>
                 <ul class="mega-links">
-                  <li><a href="#">Seven Wonders</a></li>
-                  <li><a href="#">Elegance of Pakistan</a></li>
-                  <li><a href="#">Paris</a></li>
-                  <li><a href="#">SwitzerLand</a></li>
+                  <li><a href="gallery.html">Seven Wonders</a></li>
+                  <li><a href="gallery.html">Elegance of Pakistan</a></li>
+                  <li><a href="gallery.html">Paris</a></li>
+                  <li><a href="gallery.html">SwitzerLand</a></li>
                 </ul>
               </div>
               <div class="Row">
                 <header>Our Packages</header>
                 <ul class="mega-links">
-                  <li><a href="#">Hajj and Umrah Packages</a></li>
-                  <li><a href="#">World Tour Packages</a></li>
-                  <li><a href="#">Country tour</a></li>
+                  <li><a href="flight.html">Hajj and Umrah Packages</a></li>
+                  <li><a href="flight.html">World Tour Packages</a></li>
+                  <li><a href="flight.html">Country tour</a></li>
                   <hr>
-                  <li><a href="#">Site Map</a></li>
+                  <li><a href="siteMap.html">Site Map</a></li>
                 </ul>
               </div>
             </div>
@@ -252,7 +263,7 @@
   <section id="slider">
     <div class="HeroSec">
       <div class="HScontent">
-        <div class="HSCtext">
+        <div class="HSCtext" data-aos="zoom-in">
           <h1>Images Gallery</h1>
           <h4>Have A Look On <span>Beauty </span>Of The World</h4>
           <span>Click any Image For More Information</span>
@@ -279,28 +290,28 @@
       </div>
       <div id="selector" class="radio-input">
         <label>
-        <input type="radio" id="value-1" class="filter" checked name="value-radio" value="all">
-        <span>All</span>
+          <input type="radio" id="value-1" class="filter" checked name="value-radio" value="all">
+          <span>All</span>
         </label>
         <label>
-        <input type="radio" id="value-2" class="filter" name="value-radio" value="east">
-        <span>east Sites</span>
+          <input type="radio" id="value-2" class="filter" name="value-radio" value="east">
+          <span>east Sites</span>
         </label>
         <label>
           <input type="radio" id="value-3" class="filter" name="value-radio" value="west">
-        <span>West Sites</span>
+          <span>West Sites</span>
         </label>
         <label>
           <input type="radio" id="value-4" class="filter" name="value-radio" value="north">
-        <span>North Sites</span>
+          <span>North Sites</span>
         </label>
         <label>
           <input type="radio" id="value-5" class="filter" name="value-radio" value="south">
-        <span>South Sites</span>
+          <span>South Sites</span>
         </label>
         <label>
           <input type="radio" id="value-6" class="filter" name="value-radio" value="wonders">
-        <span>Seven Wonders</span>
+          <span>Seven Wonders</span>
         </label>
         <span class="selection"></span>
       </div>
@@ -427,8 +438,9 @@
     </div>
   </footer>
   <script src="render.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    
+    AOS.init();
   </script>
   <script src="index.js"></script>
 </body>

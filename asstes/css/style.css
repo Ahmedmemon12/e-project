@@ -863,6 +863,7 @@ html,
 body {
   margin: 0;
   line-height: inherit;
+  overflow-x: hidden;
 }
 
 hr {
@@ -2701,9 +2702,9 @@ p {
     display: flex !important;
   }
 
-  .lg\:h-screen {
+  /* .lg\:h-screen {
     height: 100vh !important;
-  }
+  } */
 
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
