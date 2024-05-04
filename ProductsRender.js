@@ -417,9 +417,27 @@ function displayProduct(productId) {
         function imageSlider() {
             Img_modal.innerHTML = null
             product.images.forEach(imageUrl => {
-                const image = `<div class="slide">
-                <img src="${imageUrl}" alt="" />
-            </div>`
+                const image = `
+                <div class="half-half-image-text">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12">
+                      <h1>${product.title}</h1>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="content">
+                        <p>${product.description}</p>
+                        
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="img"><img src="${imageUrl}"></div>
+                    </div>
+                  </div>
+                </div>
+                  </div>`
                 Img_modal.innerHTML += image
             });
 
