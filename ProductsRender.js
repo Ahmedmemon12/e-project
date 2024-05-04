@@ -411,6 +411,7 @@ function displayProduct(productId) {
     if (product) {
         // Update HTML elements with product details
         document.getElementById('product-title').textContent = product.title;
+        document.querySelector('#description span').textContent = product.description
         document.title = product.title;
         const Img_modal = document.getElementById('image__Slider')
 
@@ -418,22 +419,8 @@ function displayProduct(productId) {
             Img_modal.innerHTML = null
             product.images.forEach(imageUrl => {
                 const image = `
-                <div class="half-half-image-text">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-12">
-                      <h1>${product.title}</h1>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-12 col-lg-6">
-                      <div class="content">
-                        <p>${product.description}</p>
-                        
-                      </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                      <div class="img"><img src="${imageUrl}"></div>
+                    <div class="col-12 col-lg-6 slider-wrap">
+                      <div class="img" style="background-image: url('${imageUrl}');"></div>
                     </div>
                   </div>
                 </div>
@@ -444,7 +431,7 @@ function displayProduct(productId) {
         }
         imageSlider()
 
-        document.getElementById('product-direction').textContent = `${product.direction}`;
+        document.getElementById('product-direction').textContent = `Direction: ${product.direction} Site`;
     } else {
         console.log("Product not found");
     }
@@ -464,8 +451,6 @@ $(".slideshow").slick({
     infinite: true,
     autoplay: false,
     dots: false,
-    arrows: false,
+    arrows: true,
     autoplaySpeed: 1000,
-    fade: true,
-    cssEase: 'linear'
 });

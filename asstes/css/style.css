@@ -239,6 +239,16 @@ a.emger:hover #top-header {
     color: #e70052;
     max-width: 100%;
   }
+
+  .leftCont {
+    width: 100% !important;
+    border: none !important;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.212) !important;
+  }
+
+  .rightCont {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -337,8 +347,12 @@ nav .wrapper {
 }
 
 .OnScroll {
-  color: #f2f2f2 !important;
+  color: #000000 !important;
   font-size: 30px;
+}
+
+.OnScroll>img {
+  filter: drop-shadow(2px 2px black);
 }
 
 .OnScroll>span {
@@ -346,7 +360,8 @@ nav .wrapper {
   color: tan;
 
 }
-.Nav .nav-links .active a{
+
+.Nav .nav-links .active a {
   color: white !important;
   background-color: maroon !important;
 }
@@ -2182,7 +2197,6 @@ select {
 .to-black {
   --tw-gradient-to: #000 var(--tw-gradient-to-position) !important;
   background: rgba(0, 0, 0, 0.64);
-  border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7.4px);
   -webkit-backdrop-filter: blur(7.4px);
@@ -3212,24 +3226,93 @@ section.section {
 
 
 
-.half-half-image-text{
+.half-half-image-text {
   padding: 70px 0px;
-  h1{
-    color:tan;
+
+  h1 {
+    color: tan;
     font-size: 23px;
   }
-  .content{
+
+  .content {
     height: 100%;
-    display:flex;
+    display: flex;
     align-items: center;
     padding: 35px 0px;
-    p{
+
+    p {
       font-size: 22px;
     }
   }
-  .img{
-    min-height: 320px;
-    height: 100%;
-    border-radius: 10px;
-  }
+}
+
+.img {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider-wrap {
+  background: rgba(0, 0, 0, 0.062);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.4px);
+  -webkit-backdrop-filter: blur(7.4px);
+  margin: 0px 10px;
+}
+
+.prodInfoCont {
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 46px;
+  background-color: #d2b48c25;
+}
+
+.leftCont {
+  width: 50%;
+  border-right: 2px solid rgba(0, 0, 0, 0.212);
+}
+
+.rightCont {
+  width: 50%;
+  padding: 20px;
+}
+
+#data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#product-title {
+  font-size: 25px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+}
+
+#product-direction {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#description {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: cursive;
+  line-height: 2;
+  padding: 10px 30px;
+}
+
+#description>h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  font-family: cursive;
+  line-height: 2;
 }
