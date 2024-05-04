@@ -413,7 +413,7 @@ function displayProducts(prod) {
     preview.innerHTML = null
     prod.forEach((data, ind) => {
         const card = `<figure class="snip1177" data-aos="fade-right">
-        <img src="${data.images[0]}" alt="sq-sample28"/>
+        <img src="${data.images[2]}" alt="sq-sample28"/>
         <div>
           <h3>${data.title}</h3>
         </div><a href="/product.html?id=${data.id}"></a>

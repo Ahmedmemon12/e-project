@@ -341,8 +341,8 @@ nav .wrapper {
 
 }
 .Nav .nav-links .active a{
-  color: white !important;
-  background-color: maroon !important;
+  color: tan !important;
+  background-color: #f2f2f2 !important;
 }
 .wrapper .logo a {
   font-size: clamp(1.7rem, 2.5vw, 2rem);
@@ -373,7 +373,7 @@ nav .wrapper {
 }
 
 .Nav .nav-links li a {
-  color: #800000;
+  color: tan;
 }
 
 .nav-links li a {
@@ -404,11 +404,11 @@ nav .wrapper {
   color: #000000;
 }
 .nav-links li a:hover {
-  color: #800000;
+  color: tan;
 }
 
 .nav-links .active a {
-  color: #800000 !important;
+  color: tan !important;
   background-color: white;
 }
 
@@ -3148,3 +3148,27 @@ section.section {
     }
   }
 /* responsiveness */
+
+
+
+.half-half-image-text{
+  padding: 70px 0px;
+  h1{
+    color:tan;
+    font-size: 23px;
+  }
+  .content{
+    height: 100%;
+    display:flex;
+    align-items: center;
+    padding: 35px 0px;
+    p{
+      font-size: 22px;
+    }
+  }
+  .img{
+    min-height: 320px;
+    height: 100%;
+    border-radius: 10px;
+  }
+}
