@@ -362,6 +362,18 @@
 </style>
 
 <body>
+    <!-- loader -->
+  <div id="loader">
+    <div id="loading-spinner">
+      <div class="spinner outer">
+        <div class="spinner inner">
+          <div class="spinner eye">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- loader end -->
   <nav class="Nav">
     <div class="wrapper">
       <div class="logo">
@@ -562,7 +574,11 @@
     const likeBtn = document.getElementById('like-checkbox')
     const disLikeBtn = document.getElementById('dislike-checkbox')
 
-    
+    document.addEventListener('DOMContentLoaded', function() {
+    // Add 'loaded' class to body when page is fully loaded
+    document.body.classList.add('loaded');
+});
+
     function addLike() {
       likeNum.innerText ++
     }

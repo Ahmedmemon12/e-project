@@ -1,163 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- custom css -->
-        <link rel="stylesheet" href="./asstes/css/style.css">
-        <!-- favicon -->
-        <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/78/78220.png" type="image/x-icon">
-        <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- bootstrap -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        <!-- slick slider -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-          integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-          integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-          crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- Google Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-          rel="stylesheet">
-        <!-- aos library -->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      
-        <title>historical mouments</title>
-      </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- custom css -->
+  <link rel="stylesheet" href="./asstes/css/style.css">
+  <!-- favicon -->
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/78/78220.png" type="image/x-icon">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <!-- aos library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <title>historical mouments</title>
+</head>
+<style>
+  body{
+    background-color: black;
+  }
+  #incomplete{
+    background-image: url('https://lh3.googleusercontent.com/proxy/AC2azjfV5VHAB97da130hklwyHd0ChBqZY7rHvc2RI8Kdw2nC6zyre9R_hYeTBWbNV-v1pfHPIAZaRZfmpX3Xt_xvYWaU_ghN3JoKbk');
+    height: 100vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: fixed;
+    margin-top: 70px;
+  }
+  footer{
+    bottom: 0;
+  }
+</style>
 <body>
-    <nav class="">
-        <div class="wrapper">
-          <div class="logo">
-            <a href="index.html" id="Logo" class="OnScroll">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/olx-app-976a5.appspot.com/o/eproject%2FUntitled%20design%20(5).png?alt=media&token=efdc70db-cf2c-44fd-9dc2-8ff91aa94e5b"
-                width="35px" alt="">
-              historical <span> Monuments</span></a>
-          </div>
-          <input type="radio" name="slider" id="menu-btn">
-          <input type="radio" name="slider" id="close-btn">
-          <ul class="nav-links">
-            <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-            <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="#" class="desktop-item">Show More <i class="fa-solid fa-caret-down"></i></a>
-              <input type="checkbox" id="showMega">
-              <label for="showMega" class="mobile-item">More</label>
-              <div class="mega-box">
-                <div class="content">
-                  <div class="Row">
-                    <img src="https://firebasestorage.googleapis.com/v0/b/olx-app-976a5.appspot.com/o/eproject%2Fvideo-section-ezgif.com-video-to-gif-converter.gif?alt=media&token=1d9d2955-f438-4250-9b97-9f942720c3a1" alt="">
-                  </div>
-                  <div class="Row">
-                    <header>Sites</header>
-                    <ul class="mega-links">
-                      <li><a href="gallery.html">North Sites</a></li>
-                      <li><a href="gallery.html">South Sites</a></li>
-                      <li><a href="gallery.html">East Sites</a></li>
-                      <li><a href="gallery.html">West Sites</a></li>
-                    </ul>
-                  </div>
-                  <div class="Row">
-                    <header>Places You May Like</header>
-                    <ul class="mega-links">
-                      <li><a href="gallery.html">Seven Wonders</a></li>
-                      <li><a href="gallery.html">Elegance of Pakistan</a></li>
-                      <li><a href="gallery.html">Paris</a></li>
-                      <li><a href="gallery.html">SwitzerLand</a></li>
-                    </ul>
-                  </div>
-                  <div class="Row">
-                    <header>Our Packages</header>
-                    <ul class="mega-links">
-                      <li><a href="flight.html">Hajj and Umrah Packages</a></li>
-                      <li><a href="flight.html">World Tour Packages</a></li>
-                      <li><a href="flight.html">Country tour</a></li>
-                      <hr>
-                      <li><a href="siteMap.html">Site Map</a></li>
-                    </ul>
-                  </div>
-                </div>
+  <nav class="">
+    <div class="wrapper">
+      <div class="logo">
+        <a href="index.html" id="Logo">
+          <img
+            src="https://firebasestorage.googleapis.com/v0/b/olx-app-976a5.appspot.com/o/eproject%2FUntitled%20design%20(5).png?alt=media&token=efdc70db-cf2c-44fd-9dc2-8ff91aa94e5b"
+            width="35px" alt="">
+          historical <span> Monuments</span></a>
+      </div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="#" class="desktop-item">Show More <i class="fa-solid fa-caret-down"></i></a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">More</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="Row">
+                <img
+                  src="https://firebasestorage.googleapis.com/v0/b/olx-app-976a5.appspot.com/o/eproject%2Fvideo-section-ezgif.com-video-to-gif-converter.gif?alt=media&token=1d9d2955-f438-4250-9b97-9f942720c3a1"
+                  alt="">
               </div>
-            </li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="siteMap.html">Site Map</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-          <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-        </div>
-      </nav>
-
-
-    <footer class="lg:h-screen flex items-end justify-center">
-        <div
-          class="w-full bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
-          <div class="container">
-            <div class="w-full max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
-              <div class="grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
-                <div class="flex justify-between items-center">
-                  <p class="text-sm text-gray-400">
-                    Historical Monuments
-                    <script>
-                      document.write(new Date().getFullYear())
-                    </script> - Terms Conditions & Policy.
-                  </p>
-                </div>
-                <div>
-                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300"
-                    href="#">
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                      fill="currentColor" viewBox="0 0 16 16">
-                      <path
-                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
-                    </svg>
-                  </a>
-                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300"
-                    href="#">
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                      fill="currentColor" viewBox="0 0 16 16">
-                      <path
-                        d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
-                    </svg>
-                  </a>
-                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300"
-                    href="#">
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                      fill="currentColor" viewBox="0 0 16 16">
-                      <path
-                        d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
-                    </svg>
-                  </a>
-                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300"
-                    href="#">
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                      fill="currentColor" viewBox="0 0 16 16">
-                      <path
-                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-                    </svg>
-                  </a>
-                  <a class="size-10 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-white hover:bg-primary transition-all duration-300"
-                    href="#">
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                      fill="currentColor" viewBox="0 0 16 16">
-                      <path
-                        d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z" />
-                    </svg>
-                  </a>
-                </div>
+              <div class="Row">
+                <header>Sites</header>
+                <ul class="mega-links">
+                  <li><a href="gallery.html">North Sites</a></li>
+                  <li><a href="gallery.html">South Sites</a></li>
+                  <li><a href="gallery.html">East Sites</a></li>
+                  <li><a href="gallery.html">West Sites</a></li>
+                </ul>
+              </div>
+              <div class="Row">
+                <header>Places You May Like</header>
+                <ul class="mega-links">
+                  <li><a href="gallery.html">Seven Wonders</a></li>
+                  <li><a href="gallery.html">Elegance of Pakistan</a></li>
+                  <li><a href="gallery.html">Paris</a></li>
+                  <li><a href="gallery.html">SwitzerLand</a></li>
+                </ul>
+              </div>
+              <div class="Row">
+                <header>Our Packages</header>
+                <ul class="mega-links">
+                  <li><a href="flight.html">Hajj and Umrah Packages</a></li>
+                  <li><a href="flight.html">World Tour Packages</a></li>
+                  <li><a href="flight.html">Country tour</a></li>
+                  <hr>
+                  <li><a href="siteMap.html">Site Map</a></li>
+                </ul>
               </div>
             </div>
           </div>
-        </div>
-      </footer>
+        </li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="siteMap.html">Site Map</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav>
+  <div class="gap">
+  </div>
+  <section id="incomplete">
+    
+  </section>
+
+  <script src="index.js"></script>
 </body>
+
 </html>
